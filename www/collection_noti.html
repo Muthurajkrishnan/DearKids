@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">       
+        <title>Dear Kids</title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/contentn.css">	
+    </head>
+    <body>
+	<div class="index_div">
+	  <div class="index_inner">
+		<div id="index_show"><img src="img/logonew.png" class="index_img" /></div>
+      </div>		
+    </div>
+	<div class="home_bg_div">		
+		  <div class="home-wrap">
+			<div class="home-html extend-div">
+          <nav class="navbar navbar-light bg-menu-collections">
+              <a href="collectionz.html" class="navbar-brand"><img src="img/backic.svg" /> <span id="collectio_name">New Collections</span></a>
+              <a href="#" class="navbar-brand"><img src="img/search1.svg" /></a>
+          </nav>
+          <div class="product-page-div">
+              <div class="prod-galle">
+                <div id="prodImgSlider" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                  </ol>
+                  <div class="carousel-inner" id="prod_imgs">
+                  </div>
+                  <a class="carousel-control-prev" href="#prodImgSlider" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#prodImgSlider" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>                
+            </div>
+              <hr class="prod-hr"/>
+              <div class="prod-detail">
+                  <h4 class="prod-title d-none">
+                    Description
+                  </h4>
+                  <table class="table prod-desc-table">
+                    <tbody>
+                      <tr>
+                        <td>Design Name</td>
+                        <td id="prd_name">-</td>
+                      </tr>
+                      <tr class="d-none">
+                        <td>Product MRP</td>
+                        <td id="prd_cost">-</td>
+                      </tr>
+                      <tr>
+                        <td>Description</td>
+                        <td id="prd_desc">-</td>
+                      </tr>                       
+                      <tr>
+                        <td colspan="2" class="d-none">
+                          <h6><b>Choose Size</b></h6>
+                          <div id="sizes_box">
+                              Sizes Not Availavle!
+                          </div>                        
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="qty-chooser d-none">
+                    <div>
+                      <span class="minus">-</span>
+                      <input type="number" class="count" name="qty" value="1">
+                      <span class="plus">+</span>
+                    </div>
+                    <p class="qty-disclaim" id="prd_dscl">Each Box Contains 5 Pieces</p>                   
+                  </div>                 
+              </div>
+              <hr class="prod-hr d-none"/>
+              <table class="table prod-review-table d-none">
+                <tbody>
+                  <tr>
+                    <td>Reviews</td>
+                    <td>Good Product</td>
+                  </tr>
+                  <tr>
+                    <td>Ratings</td>
+                    <td>
+                      <span class="Rating">
+                        <img src="img/star.svg" class="Rating--Star Rating--Star__active">
+                        <img src="img/star.svg" class="Rating--Star Rating--Star__active">
+                        <img src="img/star.svg" class="Rating--Star Rating--Star__active">
+                        <img src="img/star.svg" class="Rating--Star Rating--Star__active">
+                        <img src="img/star.svg" class="Rating--Star">
+                      </span>                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <button type="button" id="notifyproduct" class="add_to_notify d-none">
+                Notify Me
+              </button>
+              <div class="container text-center">
+                <div class="btn-group noti-grp">
+                  <button type="button" onclick="notifyproduct(1)" class="btn btn-success">Excellent</button>
+                  <button type="button" onclick="notifyproduct(2)" class="btn text-white btn-warning">Good</button>
+                  <button type="button" onclick="notifyproduct(3)" class="btn btn-info">Average</button>
+                </div> 
+              </div>          
+          </div>                     							
+			</div>
+		</div>
+    </div>
+    <div class="tools-footer">
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="dash.html" class="text-decoration-1"><img src="img/dash.svg"/></a></li>
+            <li class="list-inline-item"><a href="events.html"><img src="img/event.svg"/></a></li>
+            <li class="list-inline-item"><a href="carT.html" class="my-cart-icon"><img src="img/cart.svg"/><span class="badge badge-light my-cart-badge">0</span></a></li>
+            <li class="list-inline-item"><a href="profile.html"><img src="img/profile.svg"/></a></li>
+        </ul>
+    </div>
+<!-- basic modal -->
+<div class="modal fade" id="addedKart" tabindex="-1" role="dialog" aria-labelledby="addedKart" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body bg-success text-center">
+        <h3>Notified Sucessfully!!</h3>
+        <div class="text-center">
+          <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">OK</button>
+        </div>        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="addedKart1" tabindex="-1" role="dialog" aria-labelledby="addedKart" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body bg-warning text-center">
+        <h3>Already Notified!!</h3>
+        <div class="text-center">
+          <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">OK</button>
+        </div>        
+      </div>
+    </div>
+  </div>
+</div>
+<div id="imageZoomee" onclick="zoomsecond()" class="intZoom d-none">
+  <img id="zoomIngf" src="img/dkbg.png" />
+</div>   
+		<script src="js/jquery.min.js"></script>	
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+        <!--<script type="text/javascript" src="cordova.js"></script>-->
+    <script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/productnoti.js"></script>
+    </body>
+</html>

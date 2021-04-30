@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">       
+        <title>Dear Kids</title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/contentn.css">	
+    </head>
+    <body>
+	<div class="index_div">
+	  <div class="index_inner">
+		<div id="index_show"><img src="img/logonew.png" class="index_img blink-image" /></div>
+      </div>		
+    </div>
+	<div class="home_bg_div">		
+		  <div class="home-wrap">
+			<div class="home-html extend-div">
+                <nav class="navbar navbar-light bg-menu-new bg-menu-home">
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a href="#" class="navbar-brand"><img src="img/logohoriz.png" class="small_logo" /></a>
+                    <a href="#" class="navbar-brand"><i class="fa fa-bell-o text-white"></i></a>          
+                
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav">
+                            <a href="dash.html" class="nav-item nav-link active">Home</a>
+                            <a href="profile.html" class="nav-item nav-link">Profile</a>
+                            <a href="myorders.html" class="nav-item nav-link">Orders</a>
+                            <a href="carT.html" class="nav-item nav-link disabled">Cart</a>
+                        </div>
+                        <div class="navbar-nav ml-auto">
+                            <a href="javascript:;" id="LaaguOut" class="nav-item nav-link">Logout <span id="usaaruName"></span></a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="searchbar">
+                    <div class="input-group autocomplete">
+                        <span class="input-group-append">
+                            <button class="btn search-icon-btn" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                          </span>                        
+                        <input id="searchField" class="form-control py-2" type="search" placeholder="What would you like to shop today?" id="common-search-input">
+                        <div id="resulten-box"></div>
+                    </div>
+                </div>
+                <div class="top-slider-div">
+                    <div id="carouselDashBanners" class="carousel slide" data-ride="carousel" data-interval="5000">
+                        <ol class="carousel-indicators">
+                        </ol>                        
+                        <div class="carousel-inner">
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselDashBanners" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselDashBanners" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>                        
+                      </div>                   
+                </div>
+                <div class="categories-div">
+                    <h4 class="header-cate">Categories</h4>
+                    <div id="category_render"></div>
+                    <div class="">
+                      <a href="events.html">
+                        <div class="cate-container event-bg">
+                            <h3 class="event-title d-none">Events</h3>
+                            <img class="event-img" src="img/event.jpg" />
+                        </div>
+                      </a>
+                    </div>                   
+                </div>                      							
+			</div>
+		</div>
+    </div>
+    <div class="tools-footer">
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="dash.html" class="text-decoration-1"><img src="img/dash-active.svg"/></a></li>
+            <li class="list-inline-item"><a href="events.html"><img src="img/event.svg"/></a></li>
+            <li class="list-inline-item"><a href="carT.html" class="my-cart-icon"><img src="img/cart.svg"/><span class="badge badge-light" id="count-cart-badge">0</span></a></li>
+            <li class="list-inline-item"><a href="profile.html"><img src="img/profile.svg"/></a></li>
+        </ul>
+      </div>
+		<script src="js/jquery.min.js"></script>	
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+        <!--<script type="text/javascript" src="cordova.js"></script>-->
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/dash.js"></script>
+    </body>
+</html>

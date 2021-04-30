@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">       
+        <title>Dear Kids</title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/contentn.css">	
+    </head>
+    <body>
+	<div class="index_div">
+	  <div class="index_inner">
+		<div id="index_show"><img src="img/logonew.png" class="index_img" /></div>
+      </div>		
+    </div>
+	<div class="home_bg_div">		
+		  <div class="home-wrap">
+			<div class="home-html extend-div">
+          <nav class="navbar navbar-light bg-menu-collections">
+              <a href="dash.html" class="navbar-brand"><img src="img/backic.svg" /> <span id="collectio_name">Order Page</span></a>
+              <a href="#" class="navbar-brand"><img src="img/search1.svg" /></a>
+          </nav>
+          <div class="cart-page-div" id="cart_render_none">
+              <div class="cart-galle1" id="cart_render">
+              
+              </div>
+              <div class="text-center">
+                <button type="button" onclick="clearKart()" class="btn btn-sm btn-danger">
+                  Clear Cart
+                </button>
+              </div>
+              <div class="cart-hr-div">
+                <hr class="prod-hr cart-hr"/>
+              </div>
+              <div class="prod-total-detail">                 
+                <!--<table class="table prod-desc-table cart-price-desc">
+                  <tbody>
+                    <tr>
+                      <td>SUB TOTAL</td>
+                      <td><hr class="cart-dashed-line"/></td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <td>TAX</td>
+                      <td><hr class="cart-dashed-line"/></td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <td>DELIVERY CHARGE</td>
+                      <td><hr class="cart-dashed-line"/></td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <td>ORDER TOTAL</td>
+                      <td><hr class="cart-dashed-line"/></td>
+                      <td>@mdo</td>
+                    </tr>                            
+                  </tbody>
+                </table>-->              
+            </div>
+              <button type="button" onclick="send_enquiry_admin()" id="send_enquiry_admin" class="add_to_cart add2cart">
+                Enquiry
+              </button>             
+          </div>                     							
+			</div>
+		</div>
+    </div>
+    <div class="tools-footer">
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="dash.html" class="text-decoration-1"><img src="img/dash.svg"/></a></li>
+            <li class="list-inline-item"><a href="events.html"><img src="img/event.svg"/></a></li>
+            <li class="list-inline-item"><a href="carT.html" class="my-cart-icon"><img src="img/cart-active.svg"/></a></li>
+            <li class="list-inline-item"><a href="profile.html"><img src="img/profile.svg"/></a></li>
+        </ul>
+      </div>
+		<script src="js/jquery.min.js"></script>	
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+        <!--<script type="text/javascript" src="cordova.js"></script>-->
+    <script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/jquery.mycart.js"></script>
+		<script type="text/javascript" src="js/cartPage.js"></script>
+    </body>
+</html>

@@ -1,0 +1,542 @@
+body{
+	margin:0;
+	color:#edf3ff;
+	background:#31af91;
+	/*background:url(../img/logi-bg.jpg) fixed;*/
+    background-position: center;
+    background-repeat: no-repeat;
+	font-family:'Montserrat', sans-serif;
+}
+
+/**** Checkbox Designs ****/
+
+.checkbox {
+  padding-left: 20px; }
+  .checkbox label {
+    display: inline-block;
+    position: relative;
+    padding-left: 5px; }
+    .checkbox label::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      left: 0;
+      margin-left: -20px;
+      border: 1px solid #cccccc;
+      border-radius: 3px;
+      background-color: #fff;
+      -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+      -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+      transition: border 0.15s ease-in-out, color 0.15s ease-in-out; }
+    .checkbox label::after {
+      display: inline-block;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      left: 0;
+      top: 0;
+      margin-left: -20px;
+      padding-left: 3px;
+      padding-top: 1px;
+      font-size: 11px;
+      color: #555555; }
+  .checkbox input[type="checkbox"] {
+    opacity: 0; }
+    .checkbox input[type="checkbox"]:focus + label::before {
+      outline: thin dotted;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+    .checkbox input[type="checkbox"]:disabled + label {
+      opacity: 0.65; }
+      .checkbox input[type="checkbox"]:disabled + label::before {
+        background-color: #eeeeee;
+        cursor: not-allowed; }
+  .checkbox.checkbox-circle label::before {
+    border-radius: 50%; }
+  .checkbox.checkbox-inline {
+    margin-top: 0; }
+
+.checkbox-primary input[type="checkbox"]:checked + label::before {
+  background-color: #428bca;
+  border-color: #428bca; }
+.checkbox-primary input[type="checkbox"]:checked + label::after {
+  color: #fff; }
+
+.checkbox-danger input[type="checkbox"]:checked + label::before {
+  background-color: #d9534f;
+  border-color: #d9534f; }
+.checkbox-danger input[type="checkbox"]:checked + label::after {
+  color: #fff; }
+
+.checkbox-info input[type="checkbox"]:checked + label::before {
+  background-color: #5bc0de;
+  border-color: #5bc0de; }
+.checkbox-info input[type="checkbox"]:checked + label::after {
+  color: #fff; }
+
+.checkbox-warning input[type="checkbox"]:checked + label::before {
+  background-color: #f0ad4e;
+  border-color: #f0ad4e; }
+.checkbox-warning input[type="checkbox"]:checked + label::after {
+  color: #fff; }
+
+.checkbox-success input[type="checkbox"]:checked + label::before {
+  background-color: #5cb85c;
+  border-color: #5cb85c; }
+.checkbox-success input[type="checkbox"]:checked + label::after {
+  color: #fff; }
+
+  
+/**** Tanks Limit ****/
+
+#tank_limit_list label{
+	font-size:13px;
+	font-weight:600;
+}
+  
+.tank_body_section .row{
+	margin:0;
+}
+
+.tank_body_section{
+	margin-top:75px !important;
+}
+
+.tank_body_section .navbar{
+	background:#FFFFFF;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;	
+	padding:10px 0;
+	min-height:70px;
+}
+
+.tank_body_section .navbar-brand{
+	color:#31af91;
+	font-size:25px;
+	font-weight:600;
+    padding-left: 15px;
+    margin: 0;	
+}
+
+.tank_body_section .wms_settings{
+	font-size:25px;
+	color:#ef5315;
+	padding-right: 15px;
+}
+
+.tank_body_section .color_base{
+	color:#31af91 !important;
+	font-weight:500;
+}
+
+.tank_body_section .wms_top_left{
+	font-size:25px;
+	padding-left: 15px;
+}
+
+.tank_body_section .wms_top_right{
+    font-size: 20px;
+    /*padding-right: 15px;*/
+    font-weight: 500;
+}
+
+.tank_body_section #navbarNav{
+    padding: 5px 15px;
+    border-top: 1.5px solid #44c5a7;
+}
+
+.tank_body_section .navbar-toggler,.tank_body_section .navbar-toggler:focus{
+	border:none !important;
+	outline:none !important;
+}
+
+.tank_info_div{
+	padding:10px 5px;
+}
+
+#tank_mode{
+	float:right;
+}
+
+#tank_dry{
+	display:none;
+}
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    background:#ff0000;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+/**************** Tank Design ******************/
+.tank_design{
+    width: 100%;
+    margin: 0 auto;
+    height: 100px;
+    border: 3px solid #FFF !important;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 5px;
+    border-top: none !important;
+	text-align: center;
+}
+
+.left_pos{
+ left:33%;
+}
+
+.mar-bot-5p{
+	margin-bottom: 5%;
+}
+
+.tank-name{
+	text-align:center;
+	margin-bottom: 20px;
+}
+
+.anim-level{
+	animation-duration: 1s;
+	animation-name: wave;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;		
+}
+
+.level25{
+	background:url('../img/tankbg.jpg');
+	background-position: left bottom;
+	background-size: 100% 25%;
+	background-repeat: no-repeat;
+}
+
+.level50{
+	background:url('../img/tankbg.jpg');
+	background-position: left bottom;
+	animation: size50 3s;
+    -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+    animation-iteration-count: 1;
+	background-size: 100% 50%;
+	background-repeat: no-repeat;		
+}
+
+.level75{
+	background:url('../img/tankbg.jpg');
+	background-position: left bottom;
+	animation: size75 3s;
+    -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+    animation-iteration-count: 1;	
+	background-size: 100% 75%;
+	background-repeat: no-repeat;
+}
+
+.level100{
+	background:url('../img/tankbg.jpg');
+	background-position: left bottom;
+	animation: size100 3s;
+    -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+    animation-iteration-count: 1;	
+	background-size: 100% 99%;
+	background-repeat: no-repeat;
+}
+
+.text-float{
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    opacity: 0.5;	
+}
+
+
+@keyframes size25 {
+  0% {
+    background-size: 100% 0%;
+  }
+   100% {
+    background-size: 100% 25%;
+  } 
+}
+
+@keyframes size50 {
+  0% {
+    background-size: 100% 0%;
+  } 
+   100% {
+    background-size: 100% 50%;
+  } 
+}
+
+@keyframes size75 {
+  0% {
+    background-size: 100% 0%;
+  }
+   100% {
+    background-size: 100% 75%;
+  }   
+}
+
+@keyframes size100 {
+  0% {
+    background-size: 100% 0%;
+  }
+   100% {
+    background-size: 100% 99%;
+  } 
+}
+
+@keyframes wave {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+.tank-name h2{
+	font-size:18px;
+	font-weight:600;
+	padding-right:5px;
+	/*text-decoration: underline;*/
+}
+
+#LogOut{
+	color:#ff0000;
+    font-size: 25px;
+    padding-right: 15px;	
+}
+
+.hide_tanks{
+	display:none;
+}
+
+.showtank_wms{
+	display:block;
+}
+
+.wms_collapse{
+    background: rgba(136, 222, 202, 0.38);
+    padding: 5px;
+    border-radius: 5px;
+	font-size: 20px;
+}
+
+@-webkit-keyframes rotation {
+	from {
+			-webkit-transform: rotate(0deg);
+	}
+	to {
+			-webkit-transform: rotate(359deg);
+	}
+}
+
+img.MotorOn {
+	max-width:75px;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-4px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-4px); }
+}
+
+.boreRun{
+	width:100%;
+	/*background:#000;
+	padding:15px;
+	border-radius:5px;*/
+	margin-bottom:15px;
+}
+
+/**** Settings Page****/
+#tanks_number{
+	margin-top:25px;
+}
+
+
+/**** Loader Function ****/
+
+.loader_div{
+    background: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.loader_inner{
+	position:absolute;
+	top:40%;
+	width:100%;
+	text-align:center;
+}
+
+#loader {
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+/*#last_motor{
+    font-size: 9px;
+	font-weight: bold;
+    background: #6f9a65;
+    padding: 2px 7px;
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    max-width: 75px;
+    margin: 0 auto;	
+}
+
+#current_motor{
+    font-size: 9px;
+    color: #000;
+    font-weight: bold;
+    background: #31f503;
+    padding: 2px 7px;
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    max-width: 80px;
+    margin: 0 auto;
+}*/
+
+.CapText{
+    background: blue;
+    font-size: 10px;
+}
+
+.reportForm{
+	text-align:center;
+}
+
+.reportHeading{
+	text-align:center;
+	color:#201386;
+}
+
+.reportForm label{
+	text-align:center;
+	color:#000;
+	width:100%;
+}
+
+#reportSearch{
+	margin:0 auto;
+}
+
+
+#motorStatusDiv th,#motorStatusDiv td{
+	padding:3px 5px;
+}
+
+#motorStatusDiv th,#motorStatusDiv td{
+	border-right:1px solid;
+}
+
+#motorStatusDiv tbody{
+	border-bottom:1px solid;
+}
+
+#motorStatusDiv{
+	border-left:1px solid;
+	font-size: 9px;
+}
+
+#TotRunning{
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;	
+}
+
+
+/**** Units List ****/
+
+.unitsListItem{
+	background:none;
+	border:none;
+	position:relative;
+}
+
+.unitsListItem button{
+	color:#FFF;
+	font-weight: 600;	
+}
+
+.countNumber{
+    position: absolute;
+    left: 25px;
+	top:20px;
+    font-size: 18px;
+    font-weight: 600;	
+}
+
+.UnitnamE{
+    position: absolute;
+    left: 45px;
+    top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
